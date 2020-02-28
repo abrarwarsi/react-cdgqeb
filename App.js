@@ -3,10 +3,17 @@ import './style.css';
 import Joke from './Joke';
 
 function App() {
+  const arr = [1,2,3,4,5];
+  const doubled = arr.map(function(number) {
+    return number *2;
+  })
+  console.log(doubled);
 
   return (
     <div>
       <h2>Laugh if you find it funny!</h2>
+      <Joke
+      punchline="It's hard to explain puns to kleptomaniacs because they always take things literally."/>
       <Joke 
       question="What's the best thing about Switzerland?"
       punchline="I don't know, but the flag is a big plus!"/>
