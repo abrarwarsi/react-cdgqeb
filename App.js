@@ -1,16 +1,13 @@
-import React from 'react';
-import './style.css';
-import Joke from './Joke';
-import jokesData from './jokesData';
+import React from "react";
+import productsData from "vschoolProducts";
+import Product from "./Product";
 
 function App() {
-  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline} />)
-  console.log(jokeComponents)
-
+  const employeeInfo = productsData.map(info => < Product firstName={info.first_name} lastName={info.last_name} email={info.email} gender={info.gender} ip={info.ip_address} />)
   return (
     <div>
-      <h2>Laugh if you find it funny!</h2>
-      {jokeComponents}
+      <h2>Employee Info</h2>
+      {employeeInfo}
     </div>
   )
 }
