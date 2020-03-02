@@ -1,5 +1,6 @@
 
-const productsData = [{
+const productsData = [
+{
   id: 1,
   first_name: "Jeanette",
   last_name: "Penddreth",
